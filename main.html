@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Adoption Application</title>
+    <title>To-Do App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,36 +66,28 @@
 <body>
 
     <div class="form-container">
-        <h2>Dog Adoption Application</h2>
+        <h2>To-Do App</h2>
         <form>
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
+                <label for="task">Task</label>
+                <input type="text" id="task" name="task" placeholder="Enter your task">
             </div>
             <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" placeholder="Phone Number">
-            </div>
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" placeholder="Address">
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="lived-with-dog" name="lived-with-dog">
-                <label for="lived-with-dog">Have you ever lived with a Dog before?</label>
-            </div>
-            <div class="form-group">
-                <label for="preferred-breeds">Please select your preferred breeds</label>
-                <select id="preferred-breeds" name="preferred-breeds" multiple>
-                    <option value="labrador">Labrador Retriever</option>
-                    <option value="german-shepherd">German Shepherd</option>
-                    <option value="golden-retriever">Golden Retriever</option>
-                    <option value="bulldog">Bulldog</option>
-                    <option value="poodle">Poodle</option>
+                <label for="multiSelect">Assign to</label>
+                <select id="multiSelect" name="assign-to" multiple>
+                    <option value="team-member-1">Team Member 1</option>
+                    <option value="team-member-2">Team Member 2</option>
+                    <option value="team-member-3">Team Member 3</option>
+                    <option value="team-member-4">Team Member 4</option>
+                    <option value="team-member-5">Team Member 5</option>
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit">
+                <input type="checkbox" id="urgent" name="urgent">
+                <label for="urgent">Mark as urgent</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Task">
             </div>
         </form>
     </div>
